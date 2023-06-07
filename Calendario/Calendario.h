@@ -16,7 +16,7 @@ public:
         ano = a;
     }
 
-    anoBissexto()
+    int anoBissexto()
     {
         if (((ano % 4 == 0) && (ano % 100 != 0)) || (ano % 400 == 0))
             return true;
@@ -24,7 +24,7 @@ public:
             return false;
     }
 
-    diaDaSemana(){
+    int diaDaSemana(){
         int f;
         if (mes < 3)
             f = (((23 * mes)/9) + dia + 4 + ano + ((ano-1)/4) - ((ano-1)/100) + ((ano-1)/400)) % 7;
@@ -33,7 +33,7 @@ public:
         return f + 1;
     }
 
-    imprimeCalendario()
+    int imprimeCalendario()
     {
         cout << "DOM\tSEG\tTER\tQUA\tQUI\tSEX\tSAB\n\n";
 

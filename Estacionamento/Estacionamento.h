@@ -8,7 +8,7 @@ class Estacionamento {
         int horaEntrada;
         int horaSaida;
 
-    solicitarDados(int entrada, int saida) {
+    int solicitarDados(int entrada, int saida) {
         cout << "Digite o horario de entrada no estacionamento " << endl; 
         cin >> entrada; 
         cout << "Digite o horario de saida no estacionamento " << endl; 
